@@ -1,0 +1,40 @@
+li a:hover {
+    color: plum;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#navigation {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    z-index: 999;
+    background-color: palevioletred;
+}
+
+#navigation #nav {
+    float: right;
+    padding-top: 15px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+li a {
+    text-decoration:none;
+    color:black;
+}
+
+#logo {
+    float: left;
+}
+
