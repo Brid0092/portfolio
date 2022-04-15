@@ -128,8 +128,7 @@ table {
 
     /* CONTACT FORM CSS */
     .bot-white {
-        padding-top: 4rem;
-        position: relative;
+        padding-top: 2rem;
         display: flex;
         justify-content: center;
         align-items: top;
@@ -183,33 +182,45 @@ table {
         padding-bottom: 20px;
     }
 
+    /* CSS FOR TOP MAP AREA */
     .center {
         display: flex;
         text-align: center;
         justify-content: center;
     }
 
-
     .top-pink {
-        text-align: center;
-        justify-content: center;
-        width: 75%;
-        display: grid; 
         margin-top: 6rem;
-        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+        display: grid; 
         grid-auto-columns: 1fr; 
-        grid-template-columns: 0.2fr 1.8fr 1.8fr 0.2fr; 
+        grid-template-columns: 0.2fr 2.3fr 0.1fr 2.3fr 0.2fr; 
         grid-template-rows: 0.2fr 2fr 1.5fr; 
         gap: 0px 0px; 
         grid-template-areas: 
-          ". . . ."
-          ". left-column contacts ."
-          ". left-column socials ."; 
+          ". . . . ."
+          ". left-column . contacts ."
+          ". left-column . socials ."; 
       }
-
       .left-column { grid-area: left-column; }
       .contacts { grid-area: contacts; }
       .socials { grid-area: socials; }
+
+      .white-bkg {
+          background-color: white;
+          margin-bottom: 2rem;
+      }
+      
+      .ul-il {
+          text-align: left;
+          padding-left: 0.5rem;
+          padding: 1rem;
+      }
+
+      .unordered {
+          list-style: circle;
+          padding-left: 2rem;
+      }
 
 
 
