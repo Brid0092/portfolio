@@ -57,6 +57,8 @@ table {
 
 /* CSS RESET */
 
+
+
 @media screen and (max-width: 2080px) {
 
     li a:hover {
@@ -122,26 +124,96 @@ table {
         top: 0;
         margin-left: -30px;
         padding-top: 10px;
-
     }
-    .profile {
-        padding-top: 6rem;
+
+    /* CONTACT FORM CSS */
+    .bot-white {
+        padding-top: 4rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .form {
+        max-width: 85%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-style: solid;
+        border-width: 1rem;
+        border-color:#FDAFAF;
+    }
+
+    .field {
+        width: 75%;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: 2px solid rgba(0,0,0,0);
+        background-color: rgba(230,230,230,0.4);
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .3s;
+    }
+
+    .field:hover {
+        background-color:#FDAFAF;
+    }
+
+    .area {
+        min-height: 250px;
+    }
+
+    .btn {
+        width: 50%;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        background-color:#FDAFAF;
+        cursor: pointer;
+        outline: none;
+        color: white;
+        border: none;
+    }
+
+    .c-u {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .center {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .top-pink {
+        text-align: center;
+        justify-content: center;
+        width: 75%;
         display: grid; 
+        margin-top: 6rem;
+        padding-bottom: 2rem;
         grid-auto-columns: 1fr; 
-        grid-template-columns: 0.4fr 2fr 0.1fr 2fr 0.4fr; 
-        grid-template-rows: 2fr; 
+        grid-template-columns: 0.2fr 1.8fr 1.8fr 0.2fr; 
+        grid-template-rows: 0.2fr 2fr 1.5fr; 
         gap: 0px 0px; 
         grid-template-areas: 
-          ". profile-img . fun-facts ."; 
-      }
-      .profile-img { grid-area: profile-img; }
-      .fun-facts { grid-area: fun-facts; }
-
-      .profile-img {
-          text-align: center;
+          ". . . ."
+          ". left-column contacts ."
+          ". left-column socials ."; 
       }
 
-      .fun-facts {
-        text-align: center;
-      }
+      .left-column { grid-area: left-column; }
+      .contacts { grid-area: contacts; }
+      .socials { grid-area: socials; }
+
+
+
 }
+
+
+
