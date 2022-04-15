@@ -141,29 +141,40 @@ table {
     /* END OF QUOTE */
 
     .gallery {
-        padding-top: 10rem;
-        background-color:#FDAFAF;
         display: grid; 
-        grid-template-columns: 1.1fr 0.9fr 1fr 1.3fr 0.9fr 0.8fr; 
-        grid-template-rows: 0.5fr 1fr 1.2fr 0.8fr 1fr 1fr; 
-        gap: 12px 12px; 
+        grid-template-columns: 1fr 1fr 1fr 0.05fr 1.9fr 0.05fr 1fr 1.2fr; 
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr 1fr 0.1fr 0.8fr 0.1fr 1fr 1fr 0.1fr 1fr; 
+        gap: 0px 0px; 
+        padding-top: 4rem;
+        background-color:#FDAFAF;
         grid-template-areas: 
-          "img-1 img-1 img-1 img-2 img-2 img-2"
-          "img-1 img-1 img-1 img-3 img-4 img-4"
-          "img-5 img-5 img-5 img-6 img-6 img-6"
-          "img-5 img-5 img-5 img-6 img-6 img-6"
-          "img-7 img-7 img-7 img-7 img-7 img-7"; 
+          ". . . . . . . ."
+          "img-1 img-1 img-1 . img-2 img-2 img-2 img-2"
+          "img-1 img-1 img-1 . img-2 img-2 img-2 img-2"
+          "img-1 img-1 img-1 . . . . ."
+          "img-1 img-1 img-1 . img-3 . img-4 img-4"
+          ". . . . img-3 . img-4 img-4"
+          "img-5 img-5 img-5 . img-3 . img-4 img-4"
+          "img-5 img-5 img-5 . . . . ."
+          "img-5 img-5 img-5 . img-6 img-6 img-6 img-6"
+          "img-5 img-5 img-5 . img-6 img-6 img-6 img-6"
+          ". . . . . . . ."
+          "img-7 img-7 img-7 img-7 img-7 img-7 img-7 img-7"; 
       }
-      .img-1 { grid-area: img-1; }
-      .img-2 { grid-area: img-2; }
       .img-3 { grid-area: img-3; }
+      .img-2 { grid-area: img-2; }
+      .img-1 { grid-area: img-1; }
       .img-4 { grid-area: img-4; }
+      .img-7 { grid-area: img-7; }
       .img-5 { grid-area: img-5; }
       .img-6 { grid-area: img-6; }
-      .img-7 { grid-area: img-7; }
+
+      .title {
+          text-align: center;
+      }
 
       .brown-border{
-        border:3px solid brown;
+        border:0px solid brown;
         background-color: brown;
       
       }
@@ -171,12 +182,8 @@ table {
       .title {
           background-color: brown;
          
-      }
+      } 
 
-      .img-2 {
-        border:3px solid brown;
-        background-color:brown;
-      }
 }
 
    
