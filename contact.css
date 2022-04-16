@@ -139,6 +139,7 @@ table {
 
     .form {
         max-width: 85%;
+        height: 40rem;
         justify-content: center;
         align-items: center;
         text-align: center;
