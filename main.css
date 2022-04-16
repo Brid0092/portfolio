@@ -54,6 +54,7 @@ table {
 }
 
 /* CSS RESET */
+/* DESKTOP MEDIA SCREEN */
 
 @media screen and (max-width: 2080px) {
 
@@ -125,12 +126,22 @@ table {
     }
 
     /* END OF NAVIGATION BAR */
+
+    /* START OF QUOTE SECTION */
+
+    .quote {
+        background-color: #FDAFAF;
+        padding-top:6rem;
+        text-align: center;
+    }
+
+    /* END OF QUOTE SECTION */
+    /* START OF MAIN SECTION */
     main {
         width: 100%;
         height: 100vh;
         background-color:aliceblue;
         display: flex;
-        
     }
 
     .image-section {
@@ -140,9 +151,12 @@ table {
     .gallery {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr 0.05fr 1.9fr 0.05fr 1fr 1.2fr; 
-        grid-template-rows: 0.1fr 1fr 1fr 0.1fr 1fr 0.1fr 0.8fr 0.1fr 1fr 1fr 0.1fr 1fr; 
+        grid-template-rows: 0.1fr 1fr 1fr 0.15fr 1fr 0.15fr 0.8fr 0.15fr 1fr 1fr 0.15fr 0.5fr; 
         gap: 0px 0px; 
-        padding-top: 4rem;
+        height: 1680px;
+        padding-left:80px;
+        padding-right:80px;
+        padding-top: 1rem;
         background-color:#FDAFAF;
         grid-template-areas: 
           ". . . . . . . ."
@@ -171,13 +185,14 @@ table {
       }
 
       .brown-border{
-        border:0px solid brown;
-        background-color: brown;
+        background-color: #735956;
       
       }
 
       .title {
-          background-color: brown;
+          background-color: #735956;
+          color:white;
+          padding: 3px;
          
       } 
 
@@ -186,8 +201,42 @@ table {
         height: 100%;
         object-fit: cover;
     }
+
+    .heart-gallery div img {
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
+
+    }
+
+    .heart-gallery {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 0.1fr 0.5fr; 
+        gap: 1px;
+        padding-top: 3rem;
+        text-align:center;
+        padding-left:80px;
+        padding-right:80px;
+        grid-template-areas: 
+          ". . . ."
+          "hrt-1 hrt-2 hrt-3 hrt-4"; 
+      }
+      .hrt-1 { grid-area: hrt-1; }
+      .hrt-2 { grid-area: hrt-2; }
+      .hrt-3 { grid-area: hrt-3; }
+      .hrt-4 { grid-area: hrt-4; }
+
 }
   
+@media screen and (max-width: 980px) {
+    .gallery {
+        height: 1680px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+}
 
 @media screen and (max-width: 660px){
     li a:hover {
@@ -270,8 +319,7 @@ table {
         display: grid; 
         grid-auto-columns: 1fr; 
         grid-template-columns: 0.1fr 1.9fr 0.1fr; 
-        grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr; 
-        gap: 0px 0px; 
+        grid-template-rows: 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;  
         grid-template-areas: 
           ". . ."
           ". img-1 ."

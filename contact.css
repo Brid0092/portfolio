@@ -222,6 +222,11 @@ table {
           padding-left: 2rem;
       }
 
+      .icon {
+          background-color: white;
+          padding: 3px;
+      }
+
 
 
 }
