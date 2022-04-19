@@ -29,16 +29,27 @@
 
     <section class="profile">
         <div class="profile-img">
-            <img src="images/me-480.png" alt="">
+            <picture>
+                <source srcset="images/me-480.png, images/me-290.png 1.5x, images/me-188.png 2x" media="(min-width:981px)"/>
+
+                <source srcset="images/me-290.png,
+                images/me-188.png 1.5x,
+                images/me-480.png 2x"
+               media="(min-width: 660px)"/>
+
+               <source srcset="images/me-188.png, images/me-290.png 1.5x, images/me-480.png 2x" media="(max-width:660px)"/>
+
+                <img src="images/me-480.png" alt="">
+            </picture>
         </div>
         <div class="fun-facts">
-            <h2>Fun Facts</h2>
+            <h2 class="title">Fun Facts</h2>
             <ul>
-                <li>My Sun is in Taurus</li>
-                <li>I'm 5'6</li>
-                <li>I'm Queer</li>
-                <li>I'm an Extrovert</li>
-                <li>I Enjoy Playing Video Games</li>
+                <li class="facts">My Sun is in Taurus</li>
+                <li class="facts">I'm 5'6</li>
+                <li class="facts">I'm Queer</li>
+                <li class="facts">I'm an Extrovert</li>
+                <li class="facts">I Enjoy Playing Video Games</li>
             </ul>
         </div>
     </section>
@@ -60,6 +71,32 @@
                 an Art House Café and raised over 500$ for underfunded Art Programs in N.B. If you are looking for
                 something different, something big and out there. You have come to the right place!
             </p>
+        </div>
+    </section>
+
+
+    <div class="asb">
+        <span>
+            <p>ASB</p>
+        </span>
+    </div>
+
+    <section class="footer">
+        <div class="footer-div">
+            <div class="footer-socials">
+                <img class="icon" src="images/in-30.png" alt="">
+                <img class="icon" src="images/insta-30.png" alt="">
+                <img class="icon" src="images/facebook-30.png" alt="">
+                <img class="icon" src="images/twitter-30.png" alt="">
+            </div>
+            <div class="footer-info">
+                <ul>
+                    <li>Phone Number: (xxx) xxx-xxxx</li>
+                    <li>Email: Brid0092@algonquinlive.com</li>
+                    <li>copyright 2022</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 

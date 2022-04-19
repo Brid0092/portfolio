@@ -71,7 +71,7 @@ table {
         width: 100%;
         height: 100vh;
         background-color:#FDAFAF;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #navigation {
@@ -133,19 +133,21 @@ table {
         justify-content: center;
         align-items: top;
         width: 100%;
-        height: 100%;
+        height: 73%;
         background-color: white;
+        
     }
 
     .form {
         max-width: 85%;
-        height: 40rem;
+        height: 36rem;
         justify-content: center;
         align-items: center;
         text-align: center;
         border-style: solid;
         border-width: 1rem;
         border-color:#FDAFAF;
+        padding-bottom: 0.3rem;
     }
 
     .field {
@@ -170,6 +172,7 @@ table {
     .btn {
         width: 50%;
         padding: 0.5rem 1rem;
+        padding-bottom: 0.2rem;
         font-size: 1.1rem;
         background-color:#FDAFAF;
         cursor: pointer;
@@ -181,6 +184,7 @@ table {
     .c-u {
         padding-top: 20px;
         padding-bottom: 20px;
+        font-weight: bold;
     }
 
     /* CSS FOR TOP MAP AREA */
@@ -209,7 +213,18 @@ table {
 
       .white-bkg {
           background-color: white;
-          margin-bottom: 2rem;
+          padding: 0.6rem;
+      }
+
+      .icon {
+        margin-top: 1rem;
+        margin: 0.6rem;
+
+      }
+
+      .icons {
+          margin-top: 5rem;
+          margin: 0.6rem;
       }
       
       .ul-il {
@@ -221,14 +236,78 @@ table {
       .unordered {
           list-style: circle;
           padding-left: 2rem;
+          padding: 1.5rem;
       }
 
       .icon {
           background-color: white;
           padding: 3px;
       }
+      
+      .asb {
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: -6px;
+       
+    }
 
+    .asb:before {
+        content:"";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background: #735956;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
 
+    .asb:after {
+      content:"";
+      display: block;
+      width: 40%;
+      height: 2px;
+      background: #735956;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: -2;
+  }
+
+  .span {
+      background: #735956;
+  }
+
+    .foot {
+        background-color: white;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }
+
+    .footer-div {
+      display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 0.1fr 0.5fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        ". . ."
+        "footer-socials . footer-info"; 
+    }
+    .footer-socials { grid-area: footer-socials; }
+    .footer-info { grid-area: footer-info; }
+
+    .icon {
+        width: 50px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 980px) {
 
 }
 

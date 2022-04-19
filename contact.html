@@ -35,7 +35,16 @@
                         <p>Location: Orleans Ottawa, ON</p>
                     </div>
                     <div>
-                        <img src="images/map-480.png" alt="">
+                        <picture>
+                            <source srcset="images/map-480.png, images/me-280.png 1.5x" media="(min-width:981px)" />
+
+                            <source srcset="images/map-280.png,
+                                images/map-480.png" media="(min-width: 660px)" />
+
+                            <source srcset="images/map-280.png, images/me-420.png 1.5x" media="(max-width:660px)" />
+
+                            <img src="images/map-480.png" alt="">
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -48,7 +57,7 @@
                     <ul class="unordered">
                         <li class="ul-il">Phone: (xxx) xxx-xxxx</li>
                         <li class="ul-il">Email: brid0092@lgonquinlive.com</li>
-                        <li class="ul-il">Linked In:</li>
+                        <li class="ul-il">Linked In: https://www.linkedin.com/in/alicia-brideau-6a5032225/</li>
                     </ul>
                 </div>
             </section>
@@ -77,5 +86,35 @@
             <textarea class="field area" placeholder="Details"></textarea>
             <button class="btn">Submit</button>
         </div>
-
     </section>
+    <section class="asb-hold">
+        <div class="asb">
+            <span>
+                <p>ASB</p>
+            </span>
+        </div>
+    </section>
+    </section>
+    <footer>
+        <section class="foot">
+            <div class="footer-div">
+                <div class="footer-socials">
+                    <img class="icons" src="images/in-30.png" alt="">
+                    <img class="icons" src="images/insta-30.png" alt="">
+                    <img class="icons" src="images/facebook-30.png" alt="">
+                    <img class="icons" src="images/twitter-30.png" alt="">
+                </div>
+                <div class="footer-info">
+                    <ul>
+                        <li>Phone Number: (xxx) xxx-xxxx</li>
+                        <li>Email: Brid0092@algonquinlive.com</li>
+                        <li>copyright 2022</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

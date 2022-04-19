@@ -69,7 +69,7 @@ table {
         width: 100%;
         height: 100vh;
         background-color:#FDAFAF;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #navigation {
@@ -131,6 +131,8 @@ table {
         grid-template-columns: 0.4fr 2fr 0.1fr 2fr 0.4fr; 
         grid-template-rows: 2fr; 
         gap: 0px 0px; 
+        padding-left:80px;
+        padding-right:80px;
         grid-template-areas: 
           ". profile-img . fun-facts ."; 
       }
@@ -141,12 +143,130 @@ table {
           text-align: center;
       }
 
+      .title {
+          font-weight: bold;
+          margin-bottom: 2rem;
+      }
+
+      .facts {
+          padding: 0.5rem;
+      }
+
       .fun-facts {
         text-align: center;
+        margin-top: 3rem;
       }
 
       .biography {
-        padding-right: 20px;
-          
+          margin-top:3rem;
+        padding-left:10rem;
+        padding-right:10rem;
       }
+
+      .bio {
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+
+      .bio-info {
+          line-height: 2;
+      }
+
+      .asb {
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: -6px;
+       
+    }
+
+    .asb:before {
+        content:"";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background: #735956;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
+
+    .asb:after {
+      content:"";
+      display: block;
+      width: 40%;
+      height: 2px;
+      background: #735956;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: -2;
+  }
+
+  .span {
+      background: #735956;
+  }
+
+    .footer {
+        background-color: white;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-div {
+      display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 0.1fr 0.5fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        ". . ."
+        "footer-socials . footer-info"; 
+    }
+    .footer-socials { grid-area: footer-socials; }
+    .footer-info { grid-area: footer-info; }
+
+    .footer-info {
+        font-size: 100%;
+    }
+
+    .icon {
+        width: 50px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .profile {
+        padding-left:40px;
+        padding-right:40px;
+    }
+
+    .icon {
+        width: 30px;
+    }
+
+    .footer-info {
+        font-size: 80%;
+    }
+
+       
+}
+
+@media screen and (max-width: 660px) {
+    .profile {
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .icon {
+        width: 15px;
+    }
+    .footer-info {
+        font-size: 60%;
+    }
+
+
 }
