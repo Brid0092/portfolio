@@ -308,6 +308,26 @@ table {
 }
 
 @media screen and (max-width: 980px) {
+    .icons {
+        width: 30px;
+    }
+
+    .footer-info {
+        font-size: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .icons {
+        width: 15px;
+    }
+    .footer-info {
+        font-size: 60%;
+    }
+
 
 }
 
