@@ -155,6 +155,7 @@ table {
         gap: 0px 0px; 
         padding-left:80px;
         padding-right:80px;
+        height: 100rem;
         padding-top: 1rem;
         background-color:#FDAFAF;
         grid-template-areas: 
@@ -291,10 +292,19 @@ table {
   
 @media screen and (max-width: 980px) {
     .gallery {
-        height: 3280px;
+        height: 100rem;
         padding-left:30px;
         padding-right:30px;
     }
+    
+    .icon {
+        width: 30px;
+    }
+
+    .footer-info {
+        font-size: 80%;
+    }
+
 }
 
 @media screen and (max-width: 660px){
@@ -402,6 +412,19 @@ table {
       .img-5 { grid-area: img-5; }
       .img-6 { grid-area: img-6; }
       .img-7 { grid-area: img-7; }
-    
+
+     
+
+      .hearts {
+        margin-top: 100rem;
+      }
+
+      .icon {
+        width: 20px;
+    }
+    .footer-info {
+        font-size: 60%;
+    }
+
 
 }
