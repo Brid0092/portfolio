@@ -133,6 +133,16 @@ table {
         background-color: #FDAFAF;
         padding-top:6rem;
         text-align: center;
+        padding-left:40%;
+        padding-right:40%;
+    }
+
+    .a {
+        text-align: left;
+    }
+
+    .c {
+        text-align: right;
     }
 
     /* END OF QUOTE SECTION */
@@ -422,6 +432,23 @@ table {
     }
     .footer-info {
         font-size: 60%;
+    }
+
+    
+    .quote {
+        background-color: #FDAFAF;
+        padding-top:6rem;
+        text-align: center;
+        padding-left:10rem;
+        padding-right:10rem;
+    }
+
+    .a {
+        text-align: left;
+    }
+
+    .c {
+        text-align: right;
     }
 
 

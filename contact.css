@@ -135,7 +135,6 @@ table {
         width: 100%;
         height: 73%;
         background-color: white;
-        
     }
 
     .form {
@@ -316,6 +315,14 @@ table {
         font-size: 80%;
     }
 
+    .bot-white {
+        height: 73%;
+    }
+    
+    .form {
+        max-width: 75%;
+     
+    }
 
 }
 
@@ -328,6 +335,14 @@ table {
         font-size: 60%;
     }
 
+    .bot-white {
+        height: 75%;
+    }
+    
+    .form {
+        max-width: 75%;
+     
+    }
 
 }
 
