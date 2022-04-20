@@ -57,7 +57,7 @@ table {
 /* DESKTOP MEDIA SCREEN */ 
 
 @media screen and (max-width: 2080px) {
-    #poke:hover {
+    .brown-border:hover {
         opacity: 0.5;
     }
 

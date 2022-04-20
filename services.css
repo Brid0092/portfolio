@@ -460,12 +460,6 @@ table {
 
 @media screen and (max-width: 980px) {
 
-
-    body {
-        font-weight: 3rem;
-
-    }
-
     .icon {
         width: 30px;
     }
@@ -495,12 +489,18 @@ table {
         width: 12rem;
     }
 
-    #digs {
-        width: 8rem;
-    }
-
     .six {
         padding-right: 1rem;
+        width: 8rem;
+        padding-left: 3rem;
+    }
+
+    .text-6 {
+        padding-left: 2rem;
+    }
+
+    .six-2 {
+        width: 8rem;
     }
 
     .m-i {
@@ -534,10 +534,6 @@ table {
 
     .footer-info {
         font-size: 60%;
-    }
-
-    body {
-        font-weight: 1rem;
     }
 
     .m-i {
