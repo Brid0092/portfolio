@@ -65,6 +65,11 @@ table {
         color: plum;
     }
 
+    .orleans {
+        width: 400px;
+        visibility: visible;
+    }
+
     body {
         margin: 0px;
         padding: 0px;
