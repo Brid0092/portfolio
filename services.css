@@ -68,9 +68,17 @@ table {
         margin: 0px;
         padding: 0px;
         width: 100%;
+        font-family: 'ArponaSans', Tahoma, Geneva, Verdana, sans-serif;
         height: 100vh;
         background-color: #FDAFAF;
         font-size: 18px;
+    }
+
+    #nav {
+        font-family: 'Brush Script MT', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     #navigation {
@@ -406,6 +414,13 @@ table {
     .footer-info {
         font-size: 80%;
     }
+    
+    #nav {
+        font-family: 'Brush Script MT', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -417,6 +432,6 @@ table {
         font-size: 60%;
     }
 
-    
+
 
 }
