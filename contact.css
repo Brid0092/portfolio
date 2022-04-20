@@ -1,4 +1,3 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -76,7 +75,7 @@ table {
         width: 100%;
         height: 100vh;
         font-family: 'ArponaSans', Tahoma, Geneva, Verdana, sans-serif;
-        background-color:#FDAFAF;
+        background-color: #FDAFAF;
         font-size: 18px;
     }
 
@@ -97,7 +96,7 @@ table {
     }
 
     #navigation #nav {
-        background-color:white;
+        background-color: white;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -144,6 +143,7 @@ table {
         padding-top: 2rem;
         display: flex;
         justify-content: center;
+
         width: 100%;
         height: 73%;
         background-color: white;
@@ -157,7 +157,7 @@ table {
         text-align: center;
         border-style: solid;
         border-width: 1rem;
-        border-color:#FDAFAF;
+        border-color: #FDAFAF;
         padding-bottom: 0.3rem;
     }
 
@@ -169,15 +169,15 @@ table {
         width: 75%;
         padding: 0.5rem 1rem;
         outline: none;
-        border: 2px solid rgba(0,0,0,0);
-        background-color: rgba(230,230,230,0.4);
+        border: 2px solid rgba(0, 0, 0, 0);
+        background-color: rgba(230, 230, 230, 0.4);
         font-size: 1.1rem;
         margin-bottom: 22px;
         transition: .3s;
     }
 
     .field:hover {
-        background-color:#FDAFAF;
+        background-color: #FDAFAF;
     }
 
     .area {
@@ -189,7 +189,7 @@ table {
         padding: 0.5rem 1rem;
         padding-bottom: 0.2rem;
         font-size: 1.1rem;
-        background-color:#FDAFAF;
+        background-color: #FDAFAF;
         cursor: pointer;
         outline: none;
         color: white;
@@ -212,63 +212,72 @@ table {
     .top-pink {
         margin-top: 6rem;
         margin-bottom: 3rem;
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 0.2fr 2.3fr 0.1fr 2.3fr 0.2fr; 
-        grid-template-rows: 0.2fr 2fr 1.5fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          ". . . . ."
-          ". left-column . contacts ."
-          ". left-column . socials ."; 
-      }
-      .left-column { grid-area: left-column; }
-      .contacts { grid-area: contacts; }
-      .socials { grid-area: socials; }
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.2fr 2.3fr 0.1fr 2.3fr 0.2fr;
+        grid-template-rows: 0.2fr 2fr 1.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . . . ."
+            ". left-column . contacts ."
+            ". left-column . socials .";
+    }
 
-      .white-bkg {
-          background-color: white;
-          padding: 0.6rem;
-      }
+    .left-column {
+        grid-area: left-column;
+    }
 
-      .icon {
+    .contacts {
+        grid-area: contacts;
+    }
+
+    .socials {
+        grid-area: socials;
+    }
+
+    .white-bkg {
+        background-color: white;
+        padding: 0.6rem;
+    }
+
+    .icon {
         margin-top: 1rem;
         margin: 0.6rem;
 
-      }
+    }
 
-      .icons {
-          margin-top: 5rem;
-          margin: 0.6rem;
-      }
-      
-      .ul-il {
-          text-align: left;
-          padding-left: 0.5rem;
-          padding: 1rem;
-      }
+    .icons {
+        margin-top: 5rem;
+        margin: 0.6rem;
+    }
 
-      .unordered {
-          list-style: circle;
-          padding-left: 2rem;
-          padding: 1.5rem;
-      }
+    .ul-il {
+        text-align: left;
+        padding-left: 0.5rem;
+        padding: 1rem;
+    }
 
-      .icon {
-          background-color: white;
-          padding: 3px;
-      }
-      
-      .asb {
+    .unordered {
+        list-style: circle;
+        padding-left: 2rem;
+        padding: 1.5rem;
+    }
+
+    .icon {
+        background-color: white;
+        padding: 3px;
+    }
+
+    .asb {
         text-align: center;
         position: relative;
         margin-top: 100px;
         margin-bottom: -6px;
-       
+
     }
 
     .asb:before {
-        content:"";
+        content: "";
         display: block;
         width: 40%;
         height: 2px;
@@ -280,41 +289,50 @@ table {
     }
 
     .asb:after {
-      content:"";
-      display: block;
-      width: 40%;
-      height: 2px;
-      background: #735956;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      z-index: -2;
-  }
+        content: "";
+        display: block;
+        width: 40%;
+        height: 2px;
+        background: #735956;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+    }
 
-  .span {
-      background: #735956;
-  }
+    .span {
+        background: #735956;
+    }
 
-    .foot {
+    .footer {
         background-color: white;
         padding: 20px;
         justify-content: center;
         text-align: center;
-        display: flex;
     }
 
     .footer-div {
-      display: grid; 
-      grid-auto-columns: 1fr; 
-      grid-template-columns: 1fr 1fr 1fr; 
-      grid-template-rows: 0.1fr 0.5fr; 
-      gap: 0px 0px; 
-      grid-template-areas: 
-        ". . ."
-        "footer-socials . footer-info"; 
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . ."
+            "footer-socials . footer-info";
     }
-    .footer-socials { grid-area: footer-socials; }
-    .footer-info { grid-area: footer-info; }
+
+    .footer-socials {
+        grid-area: footer-socials;
+    }
+
+    .footer-info {
+        grid-area: footer-info;
+    }
+
+    .footer-info {
+        font-size: 100%;
+    }
 
     .icon {
         width: 50px;
@@ -334,10 +352,10 @@ table {
     .bot-white {
         height: 73%;
     }
-    
+
     .form {
         max-width: 75%;
-     
+
     }
 
     #nav {
@@ -354,6 +372,7 @@ table {
     .icons {
         width: 15px;
     }
+
     .footer-info {
         font-size: 60%;
     }
@@ -361,13 +380,10 @@ table {
     .bot-white {
         height: 75%;
     }
-    
+
     .form {
         max-width: 75%;
-     
+
     }
 
 }
-
-
-
