@@ -64,6 +64,12 @@ table {
         color: plum;
     }
 
+    .m-i {
+        font-family: 'Brush Script MT', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: xx-large;
+    }
+
+
     body {
         margin: 0px;
         padding: 0px;
@@ -136,7 +142,6 @@ table {
     .sec-1 {
         display: grid;
         padding-top: 10rem;
-        margin-right: 4rem;
         grid-auto-columns: 1fr;
         grid-template-columns: 1fr 0.2fr 0.5fr 0.5fr;
         grid-template-rows: 0.1fr 0.5fr 0.1fr;
@@ -163,23 +168,23 @@ table {
         grid-area: 2 / 1 / 3 / 2;
     }
 
-    .text-1 , .text-4 , .text-6{
+    .text-1, .text-4, .text-6 {
         padding-left: 7rem;
     }
 
     .a {
         font-weight: bold;
         padding-bottom: 0.7rem;
-        text-align:center;
-        padding-top:20%;
+        text-align: center;
+        padding-top: 20%;
     }
 
     .a-1 {
-        text-align:center;
+        text-align: center;
     }
 
-    #left , #right {
-       justify-content: center;
+    #left, #right {
+        justify-content: center;
     }
 
     #right {
@@ -191,13 +196,13 @@ table {
     #left {
         padding-bottom: 10rem;
         text-align: right;
-        padding-left:1rem;
+        padding-left: 1rem;
 
     }
 
     .hrt-flower {
         text-align: center;
-        padding-left: 20rem;
+        padding-left: 5rem;
 
     }
 
@@ -205,53 +210,75 @@ table {
 
 
     .sec-2 {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 0.1fr 0.5fr 0.5fr 0.2fr 1fr; 
-        grid-template-rows: 0.1fr 0.2fr 0.5fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          ". . . . ."
-          ". triangle bee . text-2"
-          ". triangle bee . text-2"; 
-      }
-      .triangle { grid-area: triangle; }
-      .bee { grid-area: bee; }
-      .text-2 { grid-area: text-2; }
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.1fr 0.5fr 0.5fr 0.2fr 1fr;
+        grid-template-rows: 0.1fr 0.2fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . . . ."
+            ". triangle bee . text-2"
+            ". triangle bee . text-2";
+    }
 
-      .painting {
+    .triangle {
+        grid-area: triangle;
+    }
+
+    .bee {
+        grid-area: bee;
+    }
+
+    .text-2 {
+        grid-area: text-2;
+    }
+
+    .paintings {
         padding: 15px;
         padding-top: 100px;
-      }
+        font-weight: bold;
+    }
 
-      .triangle {
+    .triangle {
         padding-bottom: 10rem;
-        padding-left:10rem;
-      }
+        padding-left: 10rem;
+    }
 
-      .bee {
+    .bee {
         padding-top: 6rem;
-      }
+    }
 
-      .text-2 {
-          padding-right: 112px;
-          text-align: center;
-      }
+    .text-2 {
+        padding-right: 112px;
+        text-align: center;
+    }
 
-      .sec-5 {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 0.1fr 0.5fr 0.5fr 0.2fr 1fr; 
-        grid-template-rows: 0.1fr 0.2fr 0.5fr; 
-        gap: 0px 0px; 
+    .sec-5 {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.1fr 0.5fr 0.5fr 0.2fr 1fr;
+        grid-template-rows: 0.1fr 0.2fr 0.5fr;
+        gap: 0px 0px;
         padding-bottom: 4rem;
-      }
-      .bee { grid-area: 2 / 3 / 4 / 4; }
-      .text-5 { grid-area: 2 / 5 / 4 / 6; }
-      .circle { grid-area: 2 / 2 / 4 / 3; }
-      .eye { grid-area: 2 / 3 / 4 / 4; }
+    }
 
-      
+    .bee {
+        grid-area: 2 / 3 / 4 / 4;
+    }
+
+    .text-5 {
+        grid-area: 2 / 5 / 4 / 6;
+    }
+
+    .circle {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .eye {
+        grid-area: 2 / 3 / 4 / 4;
+    }
+
+
     .eye {
         padding-top: 10rem;
         text-align: left;
@@ -261,7 +288,7 @@ table {
     .circle {
         padding-bottom: 10rem;
         text-align: right;
-        padding-left:1rem;
+        padding-left: 1rem;
     }
 
     .text-5 {
@@ -270,82 +297,101 @@ table {
     }
 
     .tattoo {
+        font-weight: bold;
         padding: 15px;
         padding-top: 100px;
 
     }
 
     .sec-6 {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 0.1fr 1fr 0.2fr 0.5fr 0.5fr; 
-        grid-template-rows: 0.1fr 0.2fr 0.5fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          ". . . . ."
-          ". text-6 . grapes ferns"
-          ". text-6 . grapes ferns"; 
-      }
-      .text-6 { grid-area: text-6; }
-      .grapes { grid-area: grapes; }
-      .ferns { grid-area: ferns; }
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.1fr 1fr 0.2fr 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.2fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . . . ."
+            ". text-6 . grapes ferns"
+            ". text-6 . grapes ferns";
+    }
 
-      .digital-art, .text-6 {
-          text-align: center;
-      }
+    .text-6 {
+        grid-area: text-6;
+    }
 
-      .digital-art {
+    .grapes {
+        grid-area: grapes;
+    }
+
+    .ferns {
+        grid-area: ferns;
+    }
+
+    .digital-art, .text-6 {
+        text-align: center;
+    }
+
+    .digital-art {
         padding: 15px;
-        padding-top: 100px;
-      }
+        padding-top: 3rem;
+        font-weight: bold;
+    }
 
-      .six {
+    .six {
         padding-bottom: 10rem;
-        padding-left:10rem;
-        
-      }
+        padding-left: 10rem;
 
-      .six-2 {
+    }
+
+    .six-2 {
         padding-top: 6rem;
-      }
+    }
 
 
     .sec-7 {
-        display: grid; 
-        grid-auto-columns: 1fr; 
-        grid-template-columns: 0.1fr 1.2fr 0.1fr; 
-        grid-template-rows: 0.1fr 0.2fr 0.5fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          ". . ."
-          ". text-7 ."
-          ". bakery ."; 
-      }
-      .text-7 { grid-area: text-7; }
-      .bakery { grid-area: bakery; }
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 0.1fr 1.2fr 0.1fr;
+        grid-template-rows: 0.1fr 0.2fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . ."
+            ". text-7 ."
+            ". bakery .";
+    }
 
-      .seven {
-          width: 80%;
-      }
+    .text-7 {
+        grid-area: text-7;
+    }
 
-      .text-7 {
-          text-align: center;
-      }
+    .bakery {
+        grid-area: bakery;
+    }
 
-      .info-7 {
+    .seven {
+        width: 80%;
+    }
+
+    .text-7 {
+        text-align: center;
+    }
+
+    .info-7 {
         padding-left: 9rem;
         padding-right: 9rem;
         padding-bottom: 3rem;
-      }
+    }
 
-      .web-design {
-          padding: 15px;
-      }
+    .web-design {
+        padding-top: 10px;
+        padding: 20px;
+        font-weight: bold;
+    }
 
-      .bakery {
+    .bakery {
         justify-content: center;
         text-align: center;
-      }
+    }
 
 
     .asb {
@@ -388,17 +434,23 @@ table {
     }
 
     .footer-div {
-      display: grid; 
-      grid-auto-columns: 1fr; 
-      grid-template-columns: 1fr 1fr 1fr; 
-      grid-template-rows: 0.1fr 0.5fr; 
-      gap: 0px 0px; 
-      grid-template-areas: 
-        ". . ."
-        "footer-socials . footer-info"; 
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . ."
+            "footer-socials . footer-info";
     }
-    .footer-socials { grid-area: footer-socials; }
-    .footer-info { grid-area: footer-info; }
+
+    .footer-socials {
+        grid-area: footer-socials;
+    }
+
+    .footer-info {
+        grid-area: footer-info;
+    }
 
     .icon {
         width: 50px;
@@ -407,31 +459,98 @@ table {
 }
 
 @media screen and (max-width: 980px) {
+
+
+    body {
+        font-weight: 3rem;
+
+    }
+
     .icon {
         width: 30px;
     }
 
     .footer-info {
-        font-size: 80%;
+        font-size: 90%;
     }
-    
+
+    .photo {
+        width: 100%;
+    }
+
+
+    .triangle {
+        padding-left: 1rem;
+    }
+
+    .paint {
+        width: 8rem;
+    }
+
+    .flower {
+        width: 15rem;
+    }
+
+    .tat {
+        width: 12rem;
+    }
+
+    #digs {
+        width: 8rem;
+    }
+
+    .six {
+        padding-right: 1rem;
+    }
+
+    .m-i {
+        font-family: 'Brush Script MT', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: x-large;
+    }
+
+    .sec-1 {
+        padding-top: 2rem;
+    }
+
     #nav {
         font-family: 'Brush Script MT', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 2rem;
         padding-left: 3rem;
         padding-right: 3rem;
     }
+
+    .text-5, .text-1, .text-2, .text-3, .text-4, .text-6, .text-7 {
+        font-size: 80%;
+    }
 }
 
+
 @media screen and (max-width: 660px) {
+
 
     .icon {
         width: 15px;
     }
+
     .footer-info {
         font-size: 60%;
     }
 
+    body {
+        font-weight: 1rem;
+    }
 
+    .m-i {
+        font-family: 'Brush Script MT', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+    }
+
+    .text-5 {
+        font-size: x-small;
+    }
+
+    .text-5, .text-1, .text-2, .text-3, .text-4, .text-6, .text-7 {
+        font-size: 70%;
+    }
 
 }
