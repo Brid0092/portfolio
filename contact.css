@@ -149,6 +149,10 @@ table {
         padding-bottom: 0.3rem;
     }
 
+    .orleans {
+        max-width: 350px;
+    }
+
     .field {
         width: 75%;
         padding: 0.5rem 1rem;

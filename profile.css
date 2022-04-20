@@ -124,6 +124,11 @@ table {
 
     }
 
+    .me {
+        width: 75%;
+        max-width: 300px;
+    }
+
     .profile {
         padding-top: 6rem;
         display: grid;
